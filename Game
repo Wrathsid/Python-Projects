@@ -1,0 +1,73 @@
+import random  
+
+# Introduction
+print("Welcome to the Adventure Game!")
+
+answer = input("Would you like to play? (yes/no) ")
+
+if answer.lower().strip() == "yes":
+    
+    print("You find yourself in a dark forest. The path splits into three directions.")
+    print("1. Go left")
+    print("2. Go right")
+    print("3. Go straight")
+    
+    choice = input("Enter the number of your choice: ").lower().strip()
+
+    if choice == "1":
+        print("You encounter a mysterious cave.")
+        print("1. Enter the cave")
+        print("2. Continue exploring the forest")
+
+        sub_choice = input("Enter the number of your choice: ").lower().strip()
+
+        if sub_choice == "1":
+            print("Inside the cave, you find a treasure chest. Choose how to open it.")
+            print("1. Open it with caution")
+            print("2. Smash it open")
+
+            treasure_choice = input("Enter the number of your choice: ").lower().strip()
+
+            if treasure_choice == "1":
+                print("Congratulations! You found a magic amulet and gained special powers.")
+            else:
+                print("Oops! The chest was booby-trapped. Game over!")
+        else:
+            print("You continue exploring and find a friendly group of elves. They guide you safely through the forest.")
+
+    elif choice == "2":
+        print("You come across a river. What do you want to do?")
+        print("1. Swim across")
+        print("2. Look for a bridge")
+
+        river_choice = input("Enter the number of your choice: ").lower().strip()
+
+        if river_choice == "1":
+            print("You brave the strong currents and make it to the other side.")
+        elif river_choice == "2":
+            print("You find a rickety bridge, but halfway across, it breaks! You fall into the river. Game over!")
+        else:
+            print("You decide to wait and see what happens. A helpful boatman appears and offers to ferry you across.")
+
+    elif choice == "3":
+        print("You encounter a magical talking tree.")
+        print("1. Ask the tree for advice")
+        print("2. Ignore the tree and keep walking")
+
+        tree_choice = input("Enter the number of your choice: ").lower().strip()
+
+        if tree_choice == "1":
+            print("The tree shares ancient wisdom with you. You gain knowledge and continue your journey.")
+        else:
+            print("Ignoring the tree, you unknowingly step into a hidden trap. Game over!")
+
+    else:
+        print("Invalid choice. The forest is confusing, and you're lost. Game over.")
+
+else:
+    print("Maybe next time. Goodbye!")
+
+  
+        
+
+
